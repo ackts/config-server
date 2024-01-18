@@ -33,3 +33,23 @@ curl https://github.com/upx/upx/releases/download/v4.2.2/upx-4.2.2-amd64_linux.t
 tar -xf upx-linux.tar.xz
 sudo mv upx-4.2.2-amd64_linux/upx /usr/bin/
 rm -rf upx-*
+
+echo "Install - dive"
+curl https://github.com/wagoodman/dive/releases/download/v0.11.0/dive_0.11.0_linux_amd64.tar.gz -o dive.tar.gz -L
+mkdir dive
+tar -C dive -xf dive.tar.gz
+sudo mv dive/dive /usr/bin/
+rm -rf dive.tar.gz dive
+
+echo "Install - lazydocker"
+curl https://github.com/jesseduffield/lazydocker/releases/download/v0.23.1/lazydocker_0.23.1_Linux_x86.tar.gz -o lazy.tar.gz -L
+mkdir lazy
+tar -C lazy -xf lazy.tar.gz
+sudo mv lazy/lazydocker /usr/bin/
+rm -rf lazy.tar.gz lazy
+
+echo "Install Extesions"
+code-server --install-extension eamodio.gitlens
+code-server --install-extension golang.go
+code-server --install-extension ritwickdey.LiveServer
+code-server --install-extension rangav.vscode-thunder-client
