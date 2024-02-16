@@ -22,7 +22,7 @@ sudo apt-get update
 sudo apt-get install docker-ce-cli docker-buildx-plugin docker-compose-plugin -y
 
 echo "Install - Go"
-curl https://go.dev/dl/go1.21.6.linux-amd64.tar.gz -o go.tar.gz -L
+curl https://go.dev/dl/go1.22.0.linux-amd64.tar.gz -o go.tar.gz -L
 sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go.tar.gz
 rm go.tar.gz
 echo 'export PATH=$PATH:/usr/local/go/bin' >> ~/.profile
