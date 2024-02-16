@@ -4,6 +4,9 @@ sudo apt-get update
 echo "Install - make"
 sudo apt-get install make -y
 
+echo "Install - sqlite3"
+sudo apt-get install sqlite3 -y
+
 echo "Install - Docker"
 # Add Docker's official GPG key:
 sudo apt-get install ca-certificates curl gnupg -y
